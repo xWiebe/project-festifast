@@ -7,7 +7,7 @@
 This is the react application for festifast.nl. This application was created for people to easily get their bus tickets to festivals. 
 
 ## Authors and acknowledgment
-- Wiebe Abdoel (for any questions: info@wiebeabdoel.com)
+- Wiebe Abdoel (for any questions: wiebe.abdoel@gmail.com)
 
 ## Roadmap
 - Implementation Firebase
