@@ -1,0 +1,66 @@
+@import '../../index.css';
+
+.festivalcard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 10px; /* Decreased margin */
+}
+
+.festivalcard {
+  background-color: var(--primary-color);
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 10px; /* Decreased padding */
+  width: 400px;
+  text-align: center;
+  margin-bottom: 10px; /* Added margin-bottom to create space between cards */
+}
+
+.festivalcard:last-child {
+  margin-bottom: 0; /* Remove margin-bottom for the last card */
+}
+
+.festivalcard img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+
+.festivalcard p {
+  font-size: 18px;
+  line-height: 1.4;
+  margin: 0;
+  color: #444;
+}
+
+.festivalcard .festivalcard-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.festivalcard .festivalcard-title {
+  font-size: 18px;
+  text-align: left;
+  margin: 0;
+}
+
+.festivalcard .festivalcard-dates {
+  font-size: 18px;
+  text-align: right;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  /* Styles for screens with a maximum width of 768px (e.g., mobile devices) */
+  .festivalcard-container {
+    margin: 5px; /* Adjusted margin for mobile screens */
+  }
+
+  h3 {
+    margin-top: -45px;
+  }
+}

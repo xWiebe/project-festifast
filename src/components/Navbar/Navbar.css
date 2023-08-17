@@ -1,0 +1,107 @@
+@import '../../index.css';
+
+.navbar {
+  color: var(--nav-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: var(--nav-bgcolor);
+  padding: 10px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--nav-color);
+  background-color: var(--nav-bgcolor);
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap; /* Added property */
+  background-color: var(--nav-bgcolor);
+}
+
+.navbar-menu li {
+  margin-right: 20px;
+  background-color: var(--nav-bgcolor);
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: var(--nav-color);
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--nav-bgcolor);
+}
+
+.navbar-menu li a:hover {
+  color: var(--secondary-color);
+}
+
+.dropdown-toggle-wrapper {
+  display: none;
+  background-color: var(--nav-bgcolor);
+  margin-right: 10px;
+  padding: 4px;
+}
+
+.dropdown-toggle-icon {
+  background-color: var(--secondary-color);
+  color: var(--btn-color);
+  cursor: pointer;
+  font-size: 24px;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.dropdown-menu-mobile {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: auto; /* Updated property */
+  right: 0; /* Added property */
+  z-index: 999;
+  background-color: var(--nav-bgcolor);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu-mobile li {
+  margin-bottom: 10px;
+}
+
+.dropdown-menu-mobile li a {
+  text-decoration: none;
+  color: var(--nav-color);
+  font-size: 18px;
+  padding: 8px;
+  display: block;
+  background-color: var(--nav-bgcolor);
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .dropdown-toggle-wrapper {
+    display: block;
+    margin-right: 0;
+  }
+
+  .dropdown-menu-mobile {
+    display: block;
+  }
+}

@@ -1,0 +1,69 @@
+@import '../../index.css';
+
+.tempcard-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px; /* Add padding to create space on the sides */
+  margin-top: 0; /* Remove margin-top */
+  margin-bottom: 0; /* Remove margin-bottom */
+}
+
+.tempcard {
+  background-color: var(--primary-color);
+  max-width: 100%;
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0; /* Remove margin-top */
+  margin-bottom: 0; /* Remove margin-bottom */
+  padding: 0 10px;
+}
+
+
+.tempcard img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.tempcard h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tempcard p {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.tempcard button {
+  background-color: var(--secondary-color);
+  border: none;
+  color: var(--btn-color);
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.tempcard button:hover {
+  background-color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .tempcard-container {
+    padding: 0; /* Remove the side padding for mobile screens */
+    margin-top: 0; /* Remove margin-top */
+    margin-bottom: 0; /* Remove margin-bottom */
+  }
+
+  .tempcard {
+    padding: 0; /* Remove the side padding for mobile screens */
+    margin-top: 0; /* Remove margin-top */
+    margin-bottom: 0; /* Remove margin-bottom */
+  }
+}

@@ -1,0 +1,47 @@
+* {
+  background-color: var(--primary-color);
+  color: var(--text-color)
+}
+
+.festival-details {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--primary-color);
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  .festival-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .festival-details p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .reserve-button {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--primary-color);
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .reserve-button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .festival-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .allign-left {
+    text-align: left;
+  }
